@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lists.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <title>List</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lists... So you don't forget</h1>
+        <button id="logout">Logout</button>
+    </header>    
+    
+    <main>
+        <p id="error"></p>
+        <section>
+            <form class="item">
+                <label>
+                    Quantity: 
+                    <input type="number" name="qty" min="0">
+                </label>
+                <label>
+                    Item: 
+                    <input type="text" name="item">
+                    <button>Add Item</button>
+                </label>
+            </form>
+            <ul id="list"></ul>
+            <button class="delete">Delete list</button>
+        
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script type="module" src="./lists.js"></script>
+</body>
+
+</html>
