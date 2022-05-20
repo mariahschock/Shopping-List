@@ -68,6 +68,11 @@ export async function togglePurchased(item) {
         return resp.data;
     }
 }
+
+export async function deleteList() {
+    const resp = await client.from('shopping_list').delete().match({ user_id: getUser().id });
+    return resp.data;
+}
 // function checkError({ data, error }) {
 //     return error ? console.error(error) : data;
 // }
