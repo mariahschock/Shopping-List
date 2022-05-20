@@ -1,0 +1,81 @@
+body {
+    --header-height: 80px;
+    --gutter: 30px;
+    --footer-height: 25px;
+    background-color: beige;
+}
+header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+header button {
+    
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    font-size: 1.5rem;
+    font-family:monospace;
+    border-radius: 5px;
+    margin: 5px;
+}
+button:hover {
+    opacity: 0.85;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 40px;
+
+}
+section {
+    background-image: url('../assets/paper.png');
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    overflow: scroll;
+    width:30%;
+    height: auto;
+    margin: 40px;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    font-size: 3em;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.complete {
+    text-decoration: line-through red;
+    opacity: 0.50;
+    cursor: pointer;
+    
+}
+#list {
+    cursor: pointer;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+    width: 60%;
+}
+button {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 5px;
+}
+
+
