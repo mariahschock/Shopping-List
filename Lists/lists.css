@@ -50,13 +50,12 @@ section {
 h1 {
     font-family: 'Shadows Into Light', cursive;
     font-weight: bolder;
-    text-decoration: wavy;
-    text-shadow: 3px darkgray;
     font-size: 3em;
     box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
     background-color:white;
     border-radius: 5px;
 }
+
 .complete {
     text-decoration: line-through red;
     opacity: 0.50;
@@ -78,3 +77,5 @@ button {
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
     border-radius: 5px;
 }
+
+
