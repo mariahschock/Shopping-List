@@ -44,3 +44,7 @@ section {
 h1 {
     font-family: 'Shadows Into Light', cursive;
 }
+.complete {
+    text-decoration: line-through red;
+    /* color: red; */
+}

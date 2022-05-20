@@ -47,7 +47,7 @@ export async function createListItem(item, qty) {
     }
 }
 export async function fetchListItem() {
-    const resp = await client.from('shopping_list').select('*').order('item');
+    const resp = await client.from('shopping_list').select('*').order('created_at');
     if (resp.error) {
         console.error(resp.error.message);
     } else {
@@ -55,6 +55,19 @@ export async function fetchListItem() {
     }
 }
 
+export async function togglePurchased(item) {
+    console.log(item);
+    const resp = await client
+        .from('shopping_list')
+        .update({ purchased: !item.purchased })
+        .match({ id: item.id });
+
+    if (resp.error) {
+        console.error(resp.error.message);
+    } else {
+        return resp.data;
+    }
+}
 // function checkError({ data, error }) {
 //     return error ? console.error(error) : data;
 // }
