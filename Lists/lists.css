@@ -2,6 +2,7 @@ body {
     --header-height: 80px;
     --gutter: 30px;
     --footer-height: 25px;
+    background-color: beige;
 }
 header {
     margin: 10px;
@@ -11,8 +12,8 @@ header {
     box-shadow: var(--shadow);
 }
 header button {
-    background-color: lemonchiffon;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
     font-size: 1.5rem;
     font-family:monospace;
     border-radius: 5px;
@@ -30,21 +31,50 @@ main {
 
 }
 section {
-    /* background-image: url('../assets/List-paper.png');
-    background-size: cover; */
+    background-image: url('../assets/paper.png');
+    background-size: cover;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
-    padding: 50px;
-    
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    overflow: scroll;
+    width:30%;
+    height: auto;
+    margin: 40px;
 }
 
 h1 {
     font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    text-decoration: wavy;
+    text-shadow: 3px darkgray;
+    font-size: 3em;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    background-color:white;
+    border-radius: 5px;
 }
 .complete {
     text-decoration: line-through red;
-    /* color: red; */
+    opacity: 0.50;
+    cursor: pointer;
+    
+}
+#list {
+    cursor: pointer;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+    width: 60%;
+}
+button {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 5px;
 }

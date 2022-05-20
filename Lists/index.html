@@ -15,28 +15,31 @@
 
 <body>
     <header>
-        <h1>Lists... So you don't forget</h1>
+        <h1>✏️ Lists... So you don't forget...</h1>
         <button id="logout">Logout</button>
     </header>    
     
     <main>
         <p id="error"></p>
+        <form class="item">
+            <label>
+                Quantity: 
+                <input type="number" name="qty" min="0">
+            </label>
+            <label>
+                Item: 
+                <input type="text" name="item">
+                <button>Add Item</button>
+            </label>
+        </form>
         <section>
-            <form class="item">
-                <label>
-                    Quantity: 
-                    <input type="number" name="qty" min="0">
-                </label>
-                <label>
-                    Item: 
-                    <input type="text" name="item">
-                    <button>Add Item</button>
-                </label>
-            </form>
+            <h2>Your list:</h2>
             <ul id="list"></ul>
-            <button id="delete">Delete list</button>
-        
+            <br>
+            <br>
         </section>
+        <button id="delete">Delete list</button>
+        <p></p>
     </main>
     <footer>
         

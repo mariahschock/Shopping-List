@@ -49,21 +49,3 @@ deleteBtn.addEventListener('click', async () => {
     await deleteList();
     displayListItems();
 });
-
-//     for (let list of lists) {
-//         const listDiv = renderItem(list);
-//         itemList.append(listDiv);
-//     }
-// }
-// loadData();
-
-// async function displayListItems() {
-//     itemList.textContent = '';
-//     const data = await fetchListItem();
-//     if (data) {
-//         for (let list of lists {
-//             const listEl = renderItem(list);
-//             listEl.addEventListener('click', async (e) => {
-//                 e.preventDefault();
-//                 await togglePurchased(item);
-//                 displayList
